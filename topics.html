@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+	<title>ng_Repeat</title>
+
+</head>
+<body >
+<div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">EDU<span class="logo_colour">TAINMENT</span></a></h1>
+          <h5 style="text-align:right" class="selected"><a href="about.html">About</a></h5>
+		  <h5> <script type="text/javascript" src="current.js">
+	   </script></h5>
+		  
+        
+        </div>
+		
+      </div>
+	  		 
+      <div id="menubar">
+        <ul id="menu">
+
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="edutips.html">EDU_tips</a></li>
+          <li><a href="read.html">READ STORIES</a></li>
+           <li><a href="fact.html">ADD SUGGESTIONS</a></li>
+		   <li class="selected"><a href="topics.html">Todays topics</a></li>
+		   	<li><a href="collegues.html">collegues</a></li>
+
+		  </ul>
+      </div>
+    </div>
+   
+<h1 style =" text-align : center"> Knowledge About : </h1>
+<script src="angular.min.js"></script>
+
+<div ng-app="DemoApp" ng-controller="DemoController" style =" text-align : center">
+<h1>Topics</h1>
+<ul><li ng-repeat="tpname in TopicNames">
+		{{tpname.name}}
+		</li></ul>
+</div>
+
+    <script src="ngrepeat.js"></script>
+</body>
+</html>

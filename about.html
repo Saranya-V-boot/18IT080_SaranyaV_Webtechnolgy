@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+ <link rel="stylesheet" type="text/css" href="style/style.css" />
+<head>
+ <script src="angular.min.js">
+ <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  
+ <title>inheritance</title>
+ </script>
+</head>
+<body ng-app="testApp">
+<div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">EDU<span class="logo_colour">TAINMENT</span></a></h1>
+          <h2></h2>
+		  <h4 style="text-align:right" class="selected"><a href="about.html">About</a></h4>
+		  <h5> <script type="text/javascript" src="current.js">
+		  
+	   </script></h5>
+        
+        </div>
+		
+      </div>
+	  		 
+      <div id="menubar">
+	  
+        <ul id="menu">
+
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="index.html">Home</a></li>
+          <li><a href="edutips.html">EDU_tips</a></li>
+          <li><a href="read.html">READ STORIES</a></li>
+           <li><a href="fact.html">ADD SUGGESTIONS</a></li>
+		   		  <li ><a href="topics.html">Todays topics</a></li>
+				  <li><a href="collegues.html">collegues</a></li>
+				  
+		  </ul>
+      </div>
+    </div>
+   
+<h2>
+    <div ng-controller="parentController" style =" text-align : center" >
+        NAME: {{message}}<br/>
+      	COLLEGE: {{color}}<br/>
+      	<div ng-controller="childController">
+      
+        	YEAR: {{year}}<br/>
+          	DEPT: {{color}}<br/>
+            EMAIL: {{type}}<br/> 
+    	</div>
+    </div></h2>
+ 
+    <script>
+        var ngApp = angular.module('testApp', []);
+ 
+        ngApp.controller('parentController', function ($scope) {
+       
+            $scope.message = "SARANYA V"; 
+            $scope.color = "THIAGARAJAR COLLEGE OF ENGINEERING";
+        });
+ 
+       ngApp.controller('childController', function ($scope) {
+            $scope.year = "3rd YEAR";
+            $scope.color = "INFORMATION TECHNOLOGY";
+         	$scope.type = "saranyav@studentent.tce.edu";
+        });
+    </script>
+	
+	<img src="t.jpg" width="500" height="400" style="text-align:center" class="center" alt="thiagarajar college of engineering">
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="angular.min.js">
+ </script>
+</head>
+<body ng-app="testApp">
+<h1>AngularJS Scope Inheritance Example.</h1>
+    <div ng-controller="parentController">
+      	Controller Name: {{controllerName}}<br/>
+        Message: {{message}}<br/>
+      	Color: {{color}}<br/>
+      	<div ng-controller="childController">
+      		Controller Name: {{controllerName}}<br/>
+        	Message: {{message}}<br/>
+          	Color: {{color}}<br/>
+            Type: {{type}}<br/> 
+    	</div>
+    </div>
+  
+    <script>
+        var ngApp = angular.module('testApp', []);
+
+        ngApp.controller('parentController', function (scope) {
+         	scope.color = "Blue";
+         	$scope.type = "Child";
+        });
+    </script>
+</body>
+</html>

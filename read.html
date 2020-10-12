@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>HEALTHY MIND</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <title>built in directive</title>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">EDU<span class="logo_colour">TAINMENT</span></a></h1>
+         <h5 style="text-align:right" class="selected"><a href="about.html">About</a></h5>
+		  <h5> <script type="text/javascript" src="current.js">
+	   </script></h5>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="edutips.html">Edu_tips</a></li>
+          <li class="selected"><a href="read.html">Read books</a></li>
+          <li><a href="fact.html">ADD SUGGESTIONS</a></li>
+		  <li ><a href="topics.html">Todays topics</a></li>
+		  <li><a href="collegues.html">collegues</a></li>
+		  
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <!-- insert your sidebar items here -->
+            <h3>Recommended book</h3>
+            <h4>lan-tamil</h4>
+            <h5>Story of Nalan thamayanthi</h5>
+            <p>The greatest love story in tamil which is enriched with lot of moral</p>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1 style="color:white;">JULIUS CAESAR</h1><br><br><br><br>
+		<p>The Tragedy of Julius Caesar (First Folio title: The Tragedie of Ivlivs Caesar) is a history play and tragedy by William Shakespeare first performed in 1599. It is one of several plays written by Shakespeare based on true events from Roman history, such as Coriolanus and Antony and Cleopatra.
+
+Set in Rome in 44 BC, the play depicts the moral dilemma of Brutus as he joins a conspiracy led by Cassius to murder Julius Caesar to prevent him from becoming dictator of Rome. Following Caesar's death, Rome is thrust into a period of civil war, and the republic the conspirators sought to preserve is lost forever.
+
+Although the play is named Julius Caesar, Brutus speaks more than four times as many lines as the title character; and the central psychological drama of the play focuses on Brutus' struggle between the conflicting demands of honour, patriotism, and friendship.</p>
+<p>The play opens with two tribunes discovering the commoners of Rome celebrating Julius Caesar's triumphant return from defeating the sons of his military rival, Pompey. The tribunes, insulting the crowd for their change in loyalty from Pompey to Caesar, attempt to end the festivities and break up the commoners, who return the insults. During the feast of Lupercal, Caesar holds a victory parade and a soothsayer warns him to "Beware the ides of March", which he ignores. Meanwhile, Cassius attempts to convince Brutus to join his conspiracy to kill Caesar. Although Brutus, friendly towards Caesar, is hesitant to kill him, he agrees that Caesar may be abusing his power. They then hear from Casca that Mark Antony has offered Caesar the crown of Rome three times and that each time Caesar refused it with increasing reluctance, in hopes that the crowd watching the exchange would beg him to accept the crown, yet the crowd applauded Caesar for denying the crown, upsetting Caesar, due to his wanting to accept the crown. On the eve of the ides of March, the conspirators meet and reveal that they have forged letters of support from the Roman people to tempt Brutus into joining. Brutus reads the letters and, after much moral debate, decides to join the conspiracy, thinking that Caesar should be killed to prevent him from doing anything against the people of Rome if he were ever to be crowned.
+
+After ignoring the soothsayer, as well as his wife Calpurnia's own premonitions, Caesar goes to the Senate. The conspirators approach him with a fake petition pleading on behalf of Metellus Cimber's banished brother. As Caesar predictably rejects the petition, Casca and the others suddenly stab him; Brutus is last. At this point, Caesar utters the famous line "Et tu, Brute?"[2] ("And you, Brutus?", i.e. "You too, Brutus?"), concluding with "Then fall, Caesar!"
+
+The conspirators make clear that they committed this murder for the good of Rome, not for their own purposes, and do not attempt to flee the scene. Brutus delivers an oration defending his own actions, and for the moment, the crowd is on his side. However, Mark Antony makes a subtle and eloquent speech over Caesar's corpse, beginning with the much-quoted "Friends, Romans, countrymen, lend me your ears!"[3] In this way, he deftly turns public opinion against the assassins by manipulating the emotions of the common people, in contrast to the rational tone of Brutus's speech, yet there is method in his rhetorical speech and gestures: he reminds them of the good Caesar had done for Rome, his sympathy with the poor, and his refusal of the crown at the Lupercal, thus questioning Brutus's claim of Caesar's ambition; he shows Caesar's bloody, lifeless body to the crowd to have them shed tears and gain sympathy for their fallen hero; and he reads Caesar's will, in which every Roman citizen would receive 75 drachmas. Antony, even as he states his intentions against it, rouses the mob to drive the conspirators from Rome. Amid the violence, an innocent poet, Cinna, is confused with the conspirator Lucius Cinna and is taken by the mob, which kills him for such "offenses" as his bad verses.
+</p>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="event.js"></script>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<button ng-click="myFunc()" > "Click here to read full story !"</button> 
+
+<div ng-show="showMe">
+    
+
+
+
+<p style="color:blue;"><br>
+
+Brutus next attacks Cassius for supposedly soiling the noble act of regicide by having accepted bribes. ("Did not great Julius bleed for justice' sake? / What villain touch'd his body, that did stab, / And not for justice?"[4]) The two are reconciled, especially after Brutus reveals that his beloved wife committed suicide under the stress of his absence from Rome; they prepare for a civil war against Mark Antony and Caesar's adopted son, Octavius, who have formed a triumvirate in Rome with Lepidus. That night, Caesar's ghost appears to Brutus with a warning of defeat. (He informs Brutus, "Thou shalt see me at Philippi."[5])
+
+
+Antony (George Coulouris) kneels over the body of Brutus (Orson Welles) at the conclusion of the Mercury Theatre production of Caesar (1937–38)
+At the battle, Cassius and Brutus, knowing that they will probably both die, smile their last smiles to each other and hold hands. During the battle, Cassius has his servant kill him after hearing of the capture of his best friend, Titinius. After Titinius, who was not really captured, sees Cassius's corpse, he commits suicide. However, Brutus wins that stage of the battle, but his victory is not conclusive. With a heavy heart, Brutus battles again the next day. He loses and commits suicide by running on his own sword, held for him by a loyal soldier.
+
+The play ends with a tribute to Brutus by Antony, who proclaims that Brutus has remained "the noblest Roman of them all"[6] because he was the only conspirator who acted, in his mind, for the good of Rome. There is then a small hint at the friction between Mark Antony and Octavius which characterises another of Shakespeare's Roman plays, Antony and Cleopatra.</p>      </div>   
+		 </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      
+      <p>contact detail :- saranyaitans@gmail.com </p>
+    </div>
+  </div> 
+  
+</body>
+
+
+
+
+
+</html>

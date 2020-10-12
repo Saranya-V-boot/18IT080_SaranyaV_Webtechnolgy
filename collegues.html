@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <title>ng_repeat ,filter</title>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" /></head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">EDU<span class="logo_colour">TAINMENT</span></a></h1>
+          <h5 style="text-align:right" class="selected"><a href="about.html">About</a></h5>
+		  <h5> <script type="text/javascript" src="current.js">
+	   </script></h5>
+        
+        </div>
+		
+      </div>
+	  		 
+      <div id="menubar">
+        <ul id="menu">
+
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="edutips.html">EDU_tips</a></li>
+          <li><a href="read.html">READ STORIES</a></li>
+           <li><a href="fact.html">ADD SUGGESTIONS</a></li>
+		    <li ><a href="topics.html">Todays topics</a></li>
+			<li class="selected"><a href="collegues.html">collegues</a></li>
+			
+		  </ul>
+      </div>
+    </div>
+
+<div ng-app="myApp" ng-controller="namesCtrl" ng-init="names" style =" text-align : center">
+
+<p>Your collegues are :</p>
+<ul>
+  <li ng-repeat="x in names | orderBy:'country'">
+    {{ x.name + ', ' + x.country }}
+  </li>
+</ul>
+
+</div>
+
+<script>
+angular.module('myApp', []).controller('namesCtrl', function($scope) {
+    $scope.names = [
+        {name:'SARANYA V',country:'18IT080'},
+		{name:'AAKASH V',country:'18IT001'},
+        {name:'REETHIKA R',country:'18IT072'},
+        {name:'SUBASRI',country:'18IT097'},
+        {name:'SUBASH',country:'18IT096'},
+        {name:'HARINI V A',country:'18IT028'},
+		{name:'VISHNU VARDHAN',country:'18IT114'},
+		{name:'LAVANYA',country:'18IT045'},
+        {name:'DHIVYARANJANI P',country:'18IT021'},
+        {name:'SARON',country:'18IT081'},
+        {name:'SANKER',country:'18IT079'},
+        {name:'RAMKUMAR',country:'18IT068'}
+        ];
+});
+</script>
+
+</body>
+
+</html>
