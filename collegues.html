@@ -21,43 +21,6 @@
         </div>
 		
       </div>
-	    
-	    
-	    
-	    
-   <script src="https://code.angularjs.org/1.6.9/angular-route.js"></script>
-<script src="https://code.angularjs.org/1.6.9/angular.js"></script>
-<script src="https://code.angularjs.org/1.6.9/angular.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-   
-   <div id="content_header"></div>
-    <div id="site_content">
-      <div id="sidebar_container">
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-		    <script type="text/javascript" src = "custdirect.js"></script>
-            <!-- insert your sidebar items here -->
-			<div ng-app="DemoApp">
-              <div ng-saran=""></div>
-            </div>
-			
-			<h4><a href="signup.html">Sign-up</a> or
-			<a href="login.html">login</a></h4>
-            <h3>Enrich you reading skill</h3>
-            <h4>There are lot of books</h4>
-            <h5> Story of Nalan thamayanthi</h5>
-            <p>The greatest love story in tamil which is enriched with lot of moral</p>
-			<p>Happy learning</p>
-          </div>
-          <div class="sidebar_base"></div>
-        </div>
-        
-      </div>
-   
-   
-   
-   
 	  		 
       <div id="menubar">
         <ul id="menu">
@@ -73,13 +36,10 @@
 		  </ul>
       </div>
     </div>
-	 
-	
-	
 
-<div ng-app="myApp" ng-controller="namesCtrl" ng-init="names">
+<div ng-app="myApp" ng-controller="namesCtrl" ng-init="names" style =" text-align : center">
 
-<h3>Your collegues are :</h3>
+<p>Your collegues are :</p>
 <ul>
   <li ng-repeat="x in names | orderBy:'country'">
     {{ x.name + ', ' + x.country }}
@@ -96,17 +56,12 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
         {name:'REETHIKA R',country:'18IT072'},
         {name:'SUBASRI',country:'18IT097'},
         {name:'SUBASH',country:'18IT096'},
-	{name:'POORNISHA',country:'18IT059'},
         {name:'HARINI V A',country:'18IT028'},
-	            {name:'BHARATHIMEENA P',country:'18IT015'},
-	            {name:'AKHILA V',country:'18IT009'},
-        {name:'GOKULA KRISHNA',country:'18IT025'},
-
-	{name:'VISHNU VARDHAN',country:'18IT114'},
-	{name:'LAVANYA',country:'18IT045'},
+		{name:'VISHNU VARDHAN',country:'18IT114'},
+		{name:'LAVANYA',country:'18IT045'},
         {name:'DHIVYARANJANI P',country:'18IT021'},
-        {name:'SARON SURYAPRAKASH',country:'18IT081'},
-        {name:'SANKAR',country:'18IT079'},
+        {name:'SARON',country:'18IT081'},
+        {name:'SANKER',country:'18IT079'},
         {name:'RAMKUMAR',country:'18IT068'}
         ];
 });
