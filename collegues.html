@@ -39,7 +39,7 @@
 
 <div ng-app="myApp" ng-controller="namesCtrl" ng-init="names" style =" text-align : center">
 
-<p>Your collegues are :</p>
+<h3>Your collegues are :</h3>
 <ul>
   <li ng-repeat="x in names | orderBy:'country'">
     {{ x.name + ', ' + x.country }}
@@ -56,12 +56,17 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
         {name:'REETHIKA R',country:'18IT072'},
         {name:'SUBASRI',country:'18IT097'},
         {name:'SUBASH',country:'18IT096'},
+	{name:'POORNISHA',country:'18IT059'},
         {name:'HARINI V A',country:'18IT028'},
-		{name:'VISHNU VARDHAN',country:'18IT114'},
-		{name:'LAVANYA',country:'18IT045'},
+	            {name:'BHARATHIMEENA P',country:'18IT015'},
+	            {name:'AKHILA V',country:'18IT009'},
+        {name:'GOKULA KRISHNA',country:'18IT025'},
+
+	{name:'VISHNU VARDHAN',country:'18IT114'},
+	{name:'LAVANYA',country:'18IT045'},
         {name:'DHIVYARANJANI P',country:'18IT021'},
-        {name:'SARON',country:'18IT081'},
-        {name:'SANKER',country:'18IT079'},
+        {name:'SARON SURYAPRAKASH',country:'18IT081'},
+        {name:'SANKAR',country:'18IT079'},
         {name:'RAMKUMAR',country:'18IT068'}
         ];
 });
