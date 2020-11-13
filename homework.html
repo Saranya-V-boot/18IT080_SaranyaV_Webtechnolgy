@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>HEALTHY MIND </title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">EDU<span class="logo_colour">TAINMENT</span></a></h1>
+          <h4 style="text-align:right" class="selected"><a href="about.html">About</a></h4>
+		  <h5> <script type="text/javascript" src="current.js">
+	   </script></h5>
+        
+        </div>
+		
+      </div>
+	  		 
+      <div id="menubar">
+        <ul id="menu">
+
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="index.html">Home</a></li>
+          <li><a href="edutips.html">EDU_tips</a></li>
+          <li><a href="read.html">READ STORIES</a></li>
+           <li><a href="fact.html">ADD SUGGESTIONS</a></li>
+		   		  <li ><a href="topics.html">Todays topics</a></li>
+				  <li class="selected"><a href="homework.html">Home work</a></li>
+				  
+		  </ul>
+      </div>
+    </div>
+   
+   <script src="https://code.angularjs.org/1.6.9/angular-route.js"></script>
+<script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+<script src="https://code.angularjs.org/1.6.9/angular.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   
+   <div id="content_header"></div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+		    <script type="text/javascript" src = "custdirect.js"></script>
+            <!-- insert your sidebar items here -->
+			<div ng-app="DemoApp">
+              <div ng-saran=""></div>
+            </div>
+			
+			<h4><a href="signup.html">Sign-up</a> or
+			<a href="login.html">login</a></h4>
+            <h3>Enrich you reading skill</h3>
+            <h4>There are lot of books</h4>
+            <h5> Story of Nalan thamayanthi</h5>
+            <p>The greatest love story in tamil which is enriched with lot of moral</p>
+			<p>Happy learning</p>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        
+      </div>
+   
+   
+   
+   
+   <h1 id="demo1"  style="text-align:center"></h1>
+<h1 id="demo2" style="color:red"></h1>
+<h1 id="demo3" style="color:blue">
+</h1>
+
+
+<script>
+	var text, parser, xmlDoc, i, txt="";
+	text ="<student_details><student><name>Saranya V</name><age>age : 20</age><rollno>61628</rollno><year>2nd year</year><branch>IT dept</branch><course>web technology</course><mail>saranyav@student.tce.edu</mail><ph>7200282455</ph></student></student_details>";
+	parser = new DOMParser();
+	xmlDoc = parser.parseFromString(text,"text/xml");
+	var c=xmlDoc.getElementsByTagName("student_details")[0].childElementCount;
+	document.getElementById("demo1").innerHTML =c;
+	document.getElementById("demo2").innerHTML =xmlDoc.getElementsByTagName("student")[0].parentNode.nodeName;
+
+    	for (i = 0; i < c; i++) {
+		txt = txt + xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue + "<br>" +
+		xmlDoc.getElementsByTagName("rollno")[i].childNodes[0].nodeValue+ "<br>"+
+		xmlDoc.getElementsByTagName("course")[i].childNodes[0].nodeValue+"<br>"+
+		xmlDoc.getElementsByTagName("branch")[i].childNodes[0].nodeValue+"<br>"+
+		xmlDoc.getElementsByTagName("ph")[i].childNodes[0].nodeValue+"<br>"+
+		xmlDoc.getElementsByTagName("mail")[i].childNodes[0].nodeValue+"<br>"
+		xmlDoc.getElementsByTagName("year")[i].childNodes[0].nodeValue+"<hr>";
+	}
+	document.getElementById("demo3").innerHTML =txt;
+</script>
+
+
+
+
+<h1 id="id0" style="text-align:center">Have you finished yesterday's work ?</h1>
+<h1 id="id1" style="text-align:center">VERY good !!</h1>
+<button type="button" onclick="document.getElementById('id1').style.color = 'green'" style="text-align:center">
+If Yes, Click Me!</button>
+<h1 id="id2" style="text-align:center">Please complete It !</h1>
+<button type="button" onclick="document.getElementById('id2').style.color = 'red'">
+
+If No ,Click Me!</button>
+
+<button onclick="displayDate()" style="text-align:center">View date :</button>
+
+<script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+<p id="demo"></p>
+
+
+<h2 style="text-align:center">Home Work</h2>
+
+<p style="text-align:center">Click here to view your work</p>
+
+<button id="myBtn" style="text-align:center">View H/W</button>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", function() {
+  alert("YOU HAVE NO WORK TODAY !!");
+});
+</script>
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+      <div id="content" style =" text-align : center" >
+        <!-- insert the page content here -->
+        <h1 style =" text-align : center">HAPPY LEARNING!!</h1>
+		<p></p>
+        <h2 style =" text-align : center">Motto of this site</h2>
+        <p style =" text-align : center">To make the educational tips available to all and to develope the reading skill od the students</p>
+        <ul>
+          <li style =" text-align : center">Reading makes a man perfect</li>
+          <li style =" text-align : center">Knowledge is power</li>
+          <li style =" text-align : center">Be aware and be prepared always</li>
+        </ul>
+      </div>
+    </div>
+    
+
+
+  
+</body>
+
+</html>
